@@ -24,10 +24,8 @@ The current structure includes only a **Controller** and a **Service** layer.
 - Provide meaningful error messages and appropriate HTTP status codes.
 
 ### 4. Authorization
+- Implement a login system with roles.
 - Secure the API using **JWT** or another suitable authorization method.
-- Protect endpoints and implement role-based access control if needed.
-
-Login system with roles
 
 ### 5. Unit Testing
 - Create a unit test class for `AccountService`.
