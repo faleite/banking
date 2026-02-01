@@ -8,22 +8,24 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "customer")
+@Table(name = "account")
 @Entity
 @Setter
 @Getter
 @AllArgsConstructor
-public class Customer {
+@NoArgsConstructor
+public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "number")
+    private String number;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "balance")
+    private double balance;
 }

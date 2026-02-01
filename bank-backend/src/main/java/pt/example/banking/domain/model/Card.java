@@ -8,14 +8,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "account")
+@Table(name = "card")
 @Entity
 @Setter
 @Getter
 @AllArgsConstructor
-public class Account {
+@NoArgsConstructor
+public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +26,6 @@ public class Account {
     @Column(name = "number")
     private String number;
 
-    @Column(name = "balance")
-    private double balance;
+    @Column(name = "type")
+    private String type;
 }
